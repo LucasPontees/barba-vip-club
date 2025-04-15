@@ -166,7 +166,10 @@ const AppointmentForm: React.FC = () => {
                 </Select>
               </div>
               
-              <Button type="button" className="w-full" onClick={() => document.querySelector('[data-value="service"]')?.click()}>
+              <Button type="button" className="w-full" onClick={() => {
+                const serviceTab = document.querySelector('[data-value="service"]') as HTMLElement;
+                if (serviceTab) serviceTab.click();
+              }}>
                 Continue to Services
               </Button>
             </TabsContent>
@@ -218,13 +221,19 @@ const AppointmentForm: React.FC = () => {
                 <Button 
                   type="button" 
                   variant="outline" 
-                  onClick={() => document.querySelector('[data-value="datetime"]')?.click()}
+                  onClick={() => {
+                    const datetimeTab = document.querySelector('[data-value="datetime"]') as HTMLElement;
+                    if (datetimeTab) datetimeTab.click();
+                  }}
                 >
                   Back
                 </Button>
                 <Button 
                   type="button" 
-                  onClick={() => document.querySelector('[data-value="contact"]')?.click()}
+                  onClick={() => {
+                    const contactTab = document.querySelector('[data-value="contact"]') as HTMLElement;
+                    if (contactTab) contactTab.click();
+                  }}
                   disabled={!service || !barber}
                 >
                   Continue to Details
@@ -308,7 +317,10 @@ const AppointmentForm: React.FC = () => {
                 <Button 
                   type="button" 
                   variant="outline" 
-                  onClick={() => document.querySelector('[data-value="service"]')?.click()}
+                  onClick={() => {
+                    const serviceTab = document.querySelector('[data-value="service"]') as HTMLElement;
+                    if (serviceTab) serviceTab.click();
+                  }}
                 >
                   Back
                 </Button>
