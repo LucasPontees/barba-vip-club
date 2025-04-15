@@ -21,8 +21,8 @@ const Login: React.FC = () => {
     
     if (!email || !password) {
       toast({
-        title: "Error",
-        description: "Please enter both email and password.",
+        title: "Erro",
+        description: "Por favor, insira email e senha.",
         variant: "destructive",
       });
       return;
@@ -30,16 +30,36 @@ const Login: React.FC = () => {
     
     setIsLoading(true);
     
-    // Simulate authentication - in a real app, this would be a Supabase auth call
-    setTimeout(() => {
-      // Mock successful login
-      toast({
-        title: "Login Successful",
-        description: "Welcome back to Barba VIP!",
+    try {
+      // Simulate authentication - in a real app, this would be a Supabase auth call
+      await new Promise<void>((resolve) => {
+        setTimeout(() => {
+          console.log('Login attempt with:', { email, password });
+          // Mock successful login for testing
+          // For demonstration, any email/password combination will work
+          resolve();
+        }, 1500);
       });
-      setIsLoading(false);
+      
+      // Login successful
+      toast({
+        title: "Login bem-sucedido",
+        description: "Bem-vindo de volta ao Barba VIP!",
+      });
+      localStorage.setItem('isAuthenticated', 'true');
+      localStorage.setItem('userEmail', email);
       navigate('/');
-    }, 1500);
+    } catch (error) {
+      // In case of any errors in the Promise
+      console.error('Login error:', error);
+      toast({
+        title: "Falha no login",
+        description: "Ocorreu um erro ao tentar fazer login.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
     
     // In a real implementation with Supabase:
     // try {
@@ -72,7 +92,7 @@ const Login: React.FC = () => {
             <CardHeader className="space-y-1">
               <CardTitle className="text-2xl font-bold">Login</CardTitle>
               <CardDescription>
-                Enter your credentials to access your account
+                Digite suas credenciais para acessar sua conta
               </CardDescription>
             </CardHeader>
             
@@ -84,7 +104,7 @@ const Login: React.FC = () => {
                     <Input
                       id="email"
                       type="email"
-                      placeholder="your.email@example.com"
+                      placeholder="seu.email@exemplo.com"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       required
@@ -93,9 +113,9 @@ const Login: React.FC = () => {
                   
                   <div className="space-y-2">
                     <div className="flex items-center justify-between">
-                      <Label htmlFor="password">Password</Label>
+                      <Label htmlFor="password">Senha</Label>
                       <Link to="/forgot-password" className="text-sm text-barber-gold hover:underline">
-                        Forgot password?
+                        Esqueceu a senha?
                       </Link>
                     </div>
                     <Input
@@ -108,7 +128,7 @@ const Login: React.FC = () => {
                   </div>
                   
                   <Button type="submit" className="w-full bg-barber-gold hover:bg-barber-gold/90 text-black" disabled={isLoading}>
-                    {isLoading ? "Logging in..." : "Login"}
+                    {isLoading ? "Entrando..." : "Entrar"}
                   </Button>
                 </div>
               </form>
@@ -116,9 +136,9 @@ const Login: React.FC = () => {
             
             <CardFooter className="flex flex-col space-y-4">
               <div className="text-sm text-center text-muted-foreground">
-                Don't have an account?{" "}
+                Não tem uma conta?{" "}
                 <Link to="/register" className="text-barber-gold hover:underline">
-                  Sign up
+                  Registre-se
                 </Link>
               </div>
             </CardFooter>
