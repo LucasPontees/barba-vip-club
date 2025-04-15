@@ -80,11 +80,10 @@ const Index: React.FC = () => {
           <div className="container mx-auto px-4 py-24 relative z-20">
             <div className="max-w-2xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                Premium Grooming Experience For The Modern Gentleman
+              Experiência de cuidados pessoais premium para o cavalheiro moderno
               </h1>
               <p className="text-xl mb-8 text-gray-200">
-                Expert barbers, premium products, and exceptional service. 
-                Join our VIP club for exclusive perks and priority bookings.
+              Barbeiros especialistas, produtos premium e serviço excepcional. Junte-se ao nosso clube VIP para vantagens exclusivas e reservas prioritárias.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/appointments">

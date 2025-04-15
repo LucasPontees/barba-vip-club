@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { UserCircle2, Menu, X } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
@@ -46,8 +45,9 @@ const Header: React.FC<HeaderProps> = ({ isAuthenticated: propIsAuthenticated, o
     <header className="bg-barber-dark text-white shadow-md">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
-          <img src="/logo.png" alt="Barber VIP Club" className="h-10 w-10" />
-          <Link to="/" className="text-2xl font-bold text-barber-gold">BARBA VIP</Link>
+          <Link to="/">
+            <img src="/logo-barber.ico" alt="Barber VIP Club" className="h-10 w-10" />
+          </Link>
         </div>
 
         {isMobile ? (
