@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -10,34 +9,34 @@ import { Scissors, Clock, Star, Users } from 'lucide-react';
 
 const featuredServices = [
   {
-    title: "Classic Haircut",
-    description: "Precision cut with expert styling and hot towel finish.",
+    title: "Corte Clássico",
+    description: "Corte preciso com modelagem especializada e finalização com toalha quente.",
     price: 25,
-    image: "/haircut.jpg",
+    image: "/corte-classico.webp",
     duration: 30,
     slug: "haircut"
   },
   {
-    title: "Beard Trim",
-    description: "Shape and style your beard for a clean, defined look.",
+    title: "Aparo de Barba",
+    description: "Modelagem e estilização da sua barba para um visual limpo e definido.",
     price: 15,
-    image: "/beard-trim.jpg",
+    image: "/aparo-de-barba.png",
     duration: 15,
     slug: "beard-trim"
   },
   {
-    title: "Haircut & Beard Combo",
-    description: "Complete grooming package for the modern gentleman.",
+    title: "Combo Corte & Barba",
+    description: "Pacote completo de cuidados para o cavalheiro moderno.",
     price: 35,
-    image: "/combo.jpg",
+    image: "/corte-barba.webp",
     duration: 45,
     slug: "haircut-beard"
   },
   {
-    title: "Hot Towel Shave",
-    description: "Traditional straight razor shave with hot towel treatment.",
+    title: "Barbear com Toalha Quente",
+    description: "Barbear tradicional com navalha e tratamento com toalha quente.",
     price: 30,
-    image: "/hot-towel.jpg",
+    image: "/toalha.jpg",
     duration: 30,
     slug: "hot-towel"
   }
@@ -45,21 +44,21 @@ const featuredServices = [
 
 const testimonials = [
   {
-    name: "John Doe",
-    role: "Marketing Executive",
-    content: "The VIP membership is absolutely worth it. I save money every month and the priority booking is a game changer for my busy schedule.",
+    name: "João Silva",
+    role: "Executivo de Marketing",
+    content: "A assinatura VIP vale absolutamente a pena. Economizo dinheiro todos os meses e a reserva prioritária é um divisor de águas para minha agenda ocupada.",
     avatar: "/testimonial1.jpg"
   },
   {
-    name: "Mike Smith",
-    role: "Software Developer",
-    content: "I've been to many barbershops, but the attention to detail and personalized service here is unmatched. My go-to place for grooming.",
+    name: "Miguel Santos",
+    role: "Desenvolvedor de Software",
+    content: "Já estive em muitas barbearias, mas a atenção aos detalhes e o serviço personalizado aqui é incomparável. Meu lugar preferido para cuidados pessoais.",
     avatar: "/testimonial2.jpg"
   },
   {
-    name: "David Williams",
-    role: "Financial Advisor",
-    content: "Since joining the VIP club, I've never had a bad haircut. The consistency and quality are impressive, and the extra perks make it a no-brainer.",
+    name: "David Oliveira",
+    role: "Consultor Financeiro",
+    content: "Desde que me juntei ao clube VIP, nunca mais tive um corte de cabelo ruim. A consistência e qualidade são impressionantes, e os benefícios extras tornam a decisão óbvia.",
     avatar: "/testimonial3.jpg"
   }
 ];
@@ -88,12 +87,12 @@ const Index: React.FC = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/appointments">
                   <Button size="lg" className="bg-barber-gold hover:bg-barber-gold/90 text-black">
-                    Book Appointment
+                    Agendar Horário
                   </Button>
                 </Link>
                 <Link to="/membership">
-                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                    Join VIP Club
+                  <Button size="lg" variant="outline" className="border-barber-gold text-barber-gold hover:bg-barber-gold/10">
+                    Junte-se ao Clube VIP
                   </Button>
                 </Link>
               </div>
@@ -104,7 +103,7 @@ const Index: React.FC = () => {
         {/* Features Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Why Choose Barba VIP</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Por Que Escolher Barba VIP</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <Card className="text-center p-6 card-hover">
@@ -112,9 +111,9 @@ const Index: React.FC = () => {
                   <div className="mx-auto w-16 h-16 bg-barber-gold/10 rounded-full flex items-center justify-center mb-4">
                     <Scissors size={28} className="text-barber-gold" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">Expert Barbers</h3>
+                  <h3 className="text-xl font-semibold mb-2">Barbeiros Especialistas</h3>
                   <p className="text-muted-foreground">
-                    Our skilled barbers bring years of experience and passion to every cut.
+                    Nossos barbeiros qualificados trazem anos de experiência e paixão para cada corte.
                   </p>
                 </CardContent>
               </Card>
@@ -124,9 +123,9 @@ const Index: React.FC = () => {
                   <div className="mx-auto w-16 h-16 bg-barber-gold/10 rounded-full flex items-center justify-center mb-4">
                     <Star size={28} className="text-barber-gold" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">Premium Products</h3>
+                  <h3 className="text-xl font-semibold mb-2">Produtos Premium</h3>
                   <p className="text-muted-foreground">
-                    We use only the finest grooming products for outstanding results.
+                    Utilizamos apenas os melhores produtos para resultados excepcionais.
                   </p>
                 </CardContent>
               </Card>
@@ -136,9 +135,9 @@ const Index: React.FC = () => {
                   <div className="mx-auto w-16 h-16 bg-barber-gold/10 rounded-full flex items-center justify-center mb-4">
                     <Clock size={28} className="text-barber-gold" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">Efficient Service</h3>
+                  <h3 className="text-xl font-semibold mb-2">Serviço Eficiente</h3>
                   <p className="text-muted-foreground">
-                    Respect for your time with prompt, efficient appointments.
+                    Respeito pelo seu tempo com agendamentos pontuais e eficientes.
                   </p>
                 </CardContent>
               </Card>
@@ -148,9 +147,9 @@ const Index: React.FC = () => {
                   <div className="mx-auto w-16 h-16 bg-barber-gold/10 rounded-full flex items-center justify-center mb-4">
                     <Users size={28} className="text-barber-gold" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">VIP Experience</h3>
+                  <h3 className="text-xl font-semibold mb-2">Experiência VIP</h3>
                   <p className="text-muted-foreground">
-                    Exclusive membership benefits and a personalized approach.
+                    Benefícios exclusivos para membros e abordagem personalizada.
                   </p>
                 </CardContent>
               </Card>
@@ -162,9 +161,9 @@ const Index: React.FC = () => {
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Our Premium Services</h2>
+              <h2 className="text-3xl font-bold mb-4">Nossos Serviços Premium</h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Discover our range of expert grooming services designed to keep you looking sharp.
+                Descubra nossa gama de serviços especializados projetados para manter seu visual impecável.
               </p>
             </div>
             
@@ -177,7 +176,7 @@ const Index: React.FC = () => {
             <div className="text-center mt-12">
               <Link to="/services">
                 <Button variant="outline" className="border-barber-brown text-barber-brown hover:bg-barber-brown hover:text-white">
-                  View All Services
+                  Ver Todos os Serviços
                 </Button>
               </Link>
             </div>
@@ -188,14 +187,14 @@ const Index: React.FC = () => {
         <section className="py-20 bg-barber-dark text-white">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl font-bold mb-6">Join Our VIP Club</h2>
+              <h2 className="text-3xl font-bold mb-6">Junte-se ao Nosso Clube VIP</h2>
               <p className="text-xl mb-8">
-                Become a member and enjoy exclusive benefits like discounted services, 
-                priority booking, complimentary products, and more.
+                Torne-se um membro e desfrute de benefícios exclusivos como descontos em serviços, 
+                agendamento prioritário, produtos gratuitos e muito mais.
               </p>
               <Link to="/membership">
                 <Button size="lg" className="bg-barber-gold hover:bg-barber-gold/90 text-black">
-                  Learn More
+                  Saiba Mais
                 </Button>
               </Link>
             </div>
@@ -205,7 +204,7 @@ const Index: React.FC = () => {
         {/* Testimonials */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">O Que Nossos Clientes Dizem</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {testimonials.map((testimonial, index) => (
@@ -240,13 +239,13 @@ const Index: React.FC = () => {
         {/* Booking CTA */}
         <section className="py-16">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6">Ready for a Fresh Look?</h2>
+            <h2 className="text-3xl font-bold mb-6">Pronto para um Novo Visual?</h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Schedule your appointment today and experience the Barba VIP difference.
+              Agende seu horário hoje e experimente a diferença Barba VIP.
             </p>
             <Link to="/appointments">
               <Button size="lg" className="bg-barber-gold hover:bg-barber-gold/90 text-black">
-                Book Your Appointment
+                Agendar seu Horário
               </Button>
             </Link>
           </div>

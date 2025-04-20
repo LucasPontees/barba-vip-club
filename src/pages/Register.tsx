@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -26,8 +25,8 @@ const Register: React.FC = () => {
     // Validation
     if (!name || !email || !password || !confirmPassword) {
       toast({
-        title: "Error",
-        description: "Please fill in all fields.",
+        title: "Erro",
+        description: "Por favor, preencha todos os campos.",
         variant: "destructive",
       });
       return;
@@ -35,8 +34,8 @@ const Register: React.FC = () => {
     
     if (password !== confirmPassword) {
       toast({
-        title: "Error",
-        description: "Passwords do not match.",
+        title: "Erro",
+        description: "As senhas não coincidem.",
         variant: "destructive",
       });
       return;
@@ -44,8 +43,8 @@ const Register: React.FC = () => {
     
     if (!acceptTerms) {
       toast({
-        title: "Error",
-        description: "Please accept the terms and conditions.",
+        title: "Erro",
+        description: "Por favor, aceite os termos e condições.",
         variant: "destructive",
       });
       return;
@@ -57,8 +56,8 @@ const Register: React.FC = () => {
     setTimeout(() => {
       // Mock successful registration
       toast({
-        title: "Registration Successful",
-        description: "Welcome to Barba VIP! You can now log in to your account.",
+        title: "Registro bem-sucedido",
+        description: "Bem-vindo à Barba VIP! Agora você pode entrar em sua conta.",
       });
       setIsLoading(false);
       navigate('/login');
@@ -102,9 +101,9 @@ const Register: React.FC = () => {
         <div className="container px-4">
           <Card className="mx-auto max-w-md">
             <CardHeader className="space-y-1">
-              <CardTitle className="text-2xl font-bold">Create an Account</CardTitle>
+              <CardTitle className="text-2xl font-bold">Criar uma Conta</CardTitle>
               <CardDescription>
-                Sign up to book appointments and join our VIP club
+                Registre-se para agendar horários e juntar-se ao nosso clube VIP
               </CardDescription>
             </CardHeader>
             
@@ -112,11 +111,11 @@ const Register: React.FC = () => {
               <form onSubmit={handleRegister}>
                 <div className="space-y-4">
                   <div className="space-y-2">
-                    <Label htmlFor="name">Full Name</Label>
+                    <Label htmlFor="name">Nome Completo</Label>
                     <Input
                       id="name"
                       type="text"
-                      placeholder="John Doe"
+                      placeholder="João Silva"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       required
@@ -128,7 +127,7 @@ const Register: React.FC = () => {
                     <Input
                       id="email"
                       type="email"
-                      placeholder="your.email@example.com"
+                      placeholder="seu.email@exemplo.com"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       required
@@ -136,7 +135,7 @@ const Register: React.FC = () => {
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="password">Password</Label>
+                    <Label htmlFor="password">Senha</Label>
                     <Input
                       id="password"
                       type="password"
@@ -147,7 +146,7 @@ const Register: React.FC = () => {
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="confirmPassword">Confirm Password</Label>
+                    <Label htmlFor="confirmPassword">Confirmar Senha</Label>
                     <Input
                       id="confirmPassword"
                       type="password"
@@ -167,15 +166,15 @@ const Register: React.FC = () => {
                       htmlFor="terms"
                       className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                     >
-                      I accept the{" "}
+                      Eu aceito os{" "}
                       <Link to="/terms" className="text-barber-gold hover:underline">
-                        terms and conditions
+                        termos e condições
                       </Link>
                     </label>
                   </div>
                   
                   <Button type="submit" className="w-full bg-barber-gold hover:bg-barber-gold/90 text-black" disabled={isLoading}>
-                    {isLoading ? "Creating account..." : "Create Account"}
+                    {isLoading ? "Criando conta..." : "Criar Conta"}
                   </Button>
                 </div>
               </form>
@@ -183,9 +182,9 @@ const Register: React.FC = () => {
             
             <CardFooter className="flex flex-col space-y-4">
               <div className="text-sm text-center text-muted-foreground">
-                Already have an account?{" "}
+                Já possui uma conta?{" "}
                 <Link to="/login" className="text-barber-gold hover:underline">
-                  Log in
+                  Entrar
                 </Link>
               </div>
             </CardFooter>

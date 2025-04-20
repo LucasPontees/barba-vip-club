@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -34,26 +33,26 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       <CardHeader>
         <CardTitle className="flex justify-between items-center">
           <span>{title}</span>
-          <span className="text-barber-gold">${price}</span>
+          <span className="text-barber-gold">R${price}</span>
         </CardTitle>
       </CardHeader>
       
       <CardContent>
         <p className="text-muted-foreground mb-2">{description}</p>
         <div className="text-sm text-muted-foreground">
-          Duration: {duration} minutes
+          Duração: {duration} minutos
         </div>
       </CardContent>
       
       <CardFooter className="flex justify-between">
         <Link to={`/services/${slug}`}>
           <Button variant="outline" className="border-barber-brown text-barber-brown hover:bg-barber-brown hover:text-white">
-            Details
+            Detalhes
           </Button>
         </Link>
         <Link to={`/appointments?service=${slug}`}>
           <Button className="bg-barber-gold hover:bg-barber-gold/90 text-black">
-            Book Now
+            Agendar
           </Button>
         </Link>
       </CardFooter>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -6,66 +5,66 @@ import ServiceCard from '@/components/ServiceCard';
 
 const services = [
   {
-    title: "Classic Haircut",
-    description: "Precision cut with expert styling and hot towel finish.",
+    title: "Corte Clássico",
+    description: "Corte preciso com modelagem especializada e finalização com toalha quente.",
     price: 25,
-    image: "/haircut.jpg",
+    image: "/corte-classico.webp",
     duration: 30,
     slug: "haircut"
   },
   {
-    title: "Beard Trim",
-    description: "Shape and style your beard for a clean, defined look.",
+    title: "Aparo de Barba",
+    description: "Modelagem e estilização da sua barba para um visual limpo e definido.",
     price: 15,
-    image: "/beard-trim.jpg",
+    image: "/aparo-de-barba.png",
     duration: 15,
     slug: "beard-trim"
   },
   {
-    title: "Haircut & Beard Combo",
-    description: "Complete grooming package for the modern gentleman.",
+    title: "Combo Corte & Barba",
+    description: "Pacote completo de cuidados para o cavalheiro moderno.",
     price: 35,
-    image: "/combo.jpg",
+    image: "/corte-barba.webp",
     duration: 45,
     slug: "haircut-beard"
   },
   {
-    title: "Hot Towel Shave",
-    description: "Traditional straight razor shave with hot towel treatment.",
+    title: "Barbear com Toalha Quente",
+    description: "Barbear tradicional com navalha e tratamento com toalha quente.",
     price: 30,
-    image: "/hot-towel.jpg",
+    image: "/toalha.jpg",
     duration: 30,
     slug: "hot-towel"
   },
   {
-    title: "Hair Coloring",
-    description: "Professional color application to cover grays or change your look.",
+    title: "Coloração",
+    description: "Aplicação profissional de cor para cobrir os grisalhos ou mudar seu visual.",
     price: 50,
-    image: "/hair-color.jpg",
+    image: "/coloracao.jpg",
     duration: 60,
     slug: "hair-color"
   },
   {
-    title: "Men's Facial",
-    description: "Rejuvenating facial treatment designed specifically for men's skin.",
+    title: "Tratamento Facial Masculino",
+    description: "Tratamento facial rejuvenescedor projetado especificamente para a pele masculina.",
     price: 40,
     image: "/facial.jpg",
     duration: 30,
     slug: "facial"
   },
   {
-    title: "Head Shave",
-    description: "Clean head shave with razor and soothing aftercare.",
+    title: "Raspagem de Cabeça",
+    description: "Raspagem limpa da cabeça com navalha e tratamento pós-barba suavizante.",
     price: 35,
-    image: "/head-shave.jpg",
+    image: "/raspagem.jpg",
     duration: 30,
     slug: "head-shave"
   },
   {
-    title: "Kid's Haircut",
-    description: "Gentle haircuts for young gentlemen under 12.",
+    title: "Corte Infantil",
+    description: "Cortes suaves para jovens cavalheiros menores de 12 anos.",
     price: 20,
-    image: "/kids-haircut.jpg",
+    image: "/corte-infantil.jpg",
     duration: 20,
     slug: "kids-haircut"
   }
@@ -80,9 +79,9 @@ const Services: React.FC = () => {
         {/* Hero Section */}
         <section className="bg-barber-dark text-white py-12">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl font-bold mb-4">Our Services</h1>
+            <h1 className="text-4xl font-bold mb-4">Nossos Serviços</h1>
             <p className="text-xl max-w-2xl mx-auto">
-              Discover our premium grooming services, tailored to meet the needs of the modern gentleman.
+              Descubra nossos serviços premium de cuidados pessoais, adaptados para atender às necessidades do cavalheiro moderno.
             </p>
           </div>
         </section>
@@ -102,32 +101,32 @@ const Services: React.FC = () => {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
-              <h2 className="text-2xl font-bold mb-6 text-center">Service Information</h2>
+              <h2 className="text-2xl font-bold mb-6 text-center">Informações sobre Serviços</h2>
               
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">VIP Club Members</h3>
+                  <h3 className="text-xl font-semibold mb-2">Membros do Clube VIP</h3>
                   <p className="text-muted-foreground">
-                    As a VIP Club member, you enjoy special discounts on all our services.
-                    Standard members receive 10% off, Premium members 20% off, and Executive members 30% off.
-                    Learn more about our membership options on our <a href="/membership" className="text-barber-gold hover:underline">Membership page</a>.
+                    Como membro do Clube VIP, você desfruta de descontos especiais em todos os nossos serviços.
+                    Membros Standard recebem 10% de desconto, membros Premium 20% de desconto e membros Executive 30% de desconto.
+                    Saiba mais sobre nossas opções de assinatura em nossa <a href="/membership" className="text-barber-gold hover:underline">página de Membros</a>.
                   </p>
                 </div>
                 
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Group Bookings</h3>
+                  <h3 className="text-xl font-semibold mb-2">Reservas em Grupo</h3>
                   <p className="text-muted-foreground">
-                    Planning a special event or group grooming session? We offer special rates for groups
-                    of 4 or more. Contact us directly to arrange group bookings for weddings, corporate events,
-                    or other special occasions.
+                    Planejando um evento especial ou sessão de cuidados em grupo? Oferecemos tarifas especiais para grupos
+                    de 4 ou mais pessoas. Entre em contato diretamente conosco para organizar reservas em grupo para casamentos, eventos corporativos,
+                    ou outras ocasiões especiais.
                   </p>
                 </div>
                 
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Custom Services</h3>
+                  <h3 className="text-xl font-semibold mb-2">Serviços Personalizados</h3>
                   <p className="text-muted-foreground">
-                    Don't see exactly what you're looking for? Our skilled barbers can provide custom services
-                    tailored to your specific needs. Please discuss your requirements when booking your appointment.
+                    Não encontrou exatamente o que está procurando? Nossos barbeiros qualificados podem fornecer serviços personalizados
+                    adaptados às suas necessidades específicas. Por favor, discuta seus requisitos ao fazer seu agendamento.
                   </p>
                 </div>
               </div>
@@ -138,12 +137,12 @@ const Services: React.FC = () => {
         {/* CTA Section */}
         <section className="py-12 bg-barber-dark text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-2xl font-bold mb-4">Ready to Book Your Service?</h2>
+            <h2 className="text-2xl font-bold mb-4">Pronto para Agendar seu Serviço?</h2>
             <p className="mb-6">
-              Schedule your appointment now and experience premium grooming at Barba VIP.
+              Agende seu horário agora e experimente cuidados premium na Barba VIP.
             </p>
             <a href="/appointments" className="inline-block bg-barber-gold hover:bg-barber-gold/90 text-black px-6 py-3 rounded-md font-semibold">
-              Book Appointment
+              Agendar Horário
             </a>
           </div>
         </section>

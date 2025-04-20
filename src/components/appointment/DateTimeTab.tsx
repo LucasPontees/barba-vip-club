@@ -28,7 +28,7 @@ const DateTimeTab: React.FC<DateTimeTabProps> = ({
   return (
     <div className="space-y-6">
       <div>
-        <Label htmlFor="date">Select Date</Label>
+        <Label htmlFor="date">Selecione a Data</Label>
         <Popover>
           <PopoverTrigger asChild>
             <Button
@@ -39,7 +39,7 @@ const DateTimeTab: React.FC<DateTimeTabProps> = ({
               )}
             >
               <CalendarIcon className="mr-2 h-4 w-4" />
-              {date ? format(date, "PPP") : <span>Pick a date</span>}
+              {date ? format(date, "PPP") : <span>Selecione uma data</span>}
             </Button>
           </PopoverTrigger>
           <PopoverContent className="w-auto p-0">
@@ -58,10 +58,10 @@ const DateTimeTab: React.FC<DateTimeTabProps> = ({
       </div>
       
       <div>
-        <Label htmlFor="time">Select Time</Label>
+        <Label htmlFor="time">Selecione o Horário</Label>
         <Select value={timeSlot} onValueChange={setTimeSlot}>
           <SelectTrigger className="w-full mt-2">
-            <SelectValue placeholder="Select a time slot" />
+            <SelectValue placeholder="Selecione um horário" />
           </SelectTrigger>
           <SelectContent>
             {timeSlots.map((time) => (
@@ -72,7 +72,7 @@ const DateTimeTab: React.FC<DateTimeTabProps> = ({
       </div>
       
       <Button type="button" className="w-full" onClick={onContinue}>
-        Continue to Services
+        Continuar para Serviços
       </Button>
     </div>
   );

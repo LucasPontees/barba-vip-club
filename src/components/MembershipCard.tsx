@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -29,8 +28,8 @@ const MembershipCard: React.FC<MembershipCardProps> = ({
   const handleSubscribe = () => {
     if (isSubscribed) {
       toast({
-        title: "Already subscribed",
-        description: "You are already subscribed to this plan.",
+        title: "Já inscrito",
+        description: "Você já está inscrito neste plano.",
         variant: "default",
       });
       return;
@@ -45,13 +44,13 @@ const MembershipCard: React.FC<MembershipCardProps> = ({
     } ${isSubscribed ? 'border-green-500 border-2' : ''} card-hover`}>
       {isSubscribed && (
         <div className="absolute top-2 right-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full">
-          Your Plan
+          Seu Plano
         </div>
       )}
       
       {isPopular && !isSubscribed && (
         <div className="absolute top-2 right-2 bg-barber-gold text-black text-xs px-2 py-1 rounded-full">
-          Most Popular
+          Mais Popular
         </div>
       )}
       
@@ -63,8 +62,8 @@ const MembershipCard: React.FC<MembershipCardProps> = ({
       
       <CardContent className="pt-6">
         <div className="text-center mb-6">
-          <span className="text-3xl font-bold">${price}</span>
-          <span className="text-muted-foreground">/month</span>
+          <span className="text-3xl font-bold">R${price}</span>
+          <span className="text-muted-foreground">/mês</span>
         </div>
         
         <ul className="space-y-3">
@@ -87,7 +86,7 @@ const MembershipCard: React.FC<MembershipCardProps> = ({
           onClick={handleSubscribe}
           disabled={isSubscribed}
         >
-          {isSubscribed ? 'Current Plan' : 'Subscribe Now'}
+          {isSubscribed ? 'Plano Atual' : 'Assinar Agora'}
         </Button>
       </CardFooter>
     </Card>

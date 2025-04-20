@@ -12,10 +12,10 @@ const Appointments: React.FC = () => {
       <main className="flex-grow pt-8 pb-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h1 className="text-3xl font-bold mb-4">Book Your Appointment</h1>
+            <h1 className="text-3xl font-bold mb-4">Agende seu Horário</h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Schedule your next visit with our expert barbers. Choose your preferred service,
-              barber, date, and time for a premium grooming experience.
+              Agende sua próxima visita com nossos barbeiros especialistas. Escolha seu serviço preferido,
+              barbeiro, data e horário para uma experiência de cuidado personalizado.
             </p>
           </div>
           

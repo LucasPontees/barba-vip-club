@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useToast } from "@/components/ui/use-toast";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -28,16 +27,16 @@ const AppointmentForm: React.FC = () => {
     
     if (!date || !timeSlot || !service || !barber || !name || !email || !phone) {
       toast({
-        title: "Missing Information",
-        description: "Please fill in all required fields.",
+        title: "Informações Faltando",
+        description: "Por favor, preencha todos os campos obrigatórios.",
         variant: "destructive",
       });
       return;
     }
     
     toast({
-      title: "Appointment Booked!",
-      description: `Your appointment has been scheduled for ${date.toLocaleDateString()} at ${timeSlot}.`,
+      title: "Agendamento Confirmado!",
+      description: `Seu horário foi agendado para ${date.toLocaleDateString()} às ${timeSlot}.`,
     });
     
     // Reset form
@@ -59,17 +58,17 @@ const AppointmentForm: React.FC = () => {
   return (
     <Card className="w-full max-w-3xl mx-auto">
       <CardHeader>
-        <CardTitle className="text-2xl">Book Your Appointment</CardTitle>
-        <CardDescription>Schedule your next grooming session with our expert barbers.</CardDescription>
+        <CardTitle className="text-2xl">Agende seu Horário</CardTitle>
+        <CardDescription>Marque sua próxima sessão com nossos barbeiros especialistas.</CardDescription>
       </CardHeader>
       
       <CardContent>
         <form onSubmit={handleSubmit}>
           <Tabs defaultValue="datetime" className="w-full">
             <TabsList className="grid grid-cols-3 mb-8">
-              <TabsTrigger value="datetime">Date & Time</TabsTrigger>
-              <TabsTrigger value="service">Service & Barber</TabsTrigger>
-              <TabsTrigger value="contact">Your Details</TabsTrigger>
+              <TabsTrigger value="datetime">Data & Hora</TabsTrigger>
+              <TabsTrigger value="service">Serviço & Barbeiro</TabsTrigger>
+              <TabsTrigger value="contact">Seus Dados</TabsTrigger>
             </TabsList>
             
             <TabsContent value="datetime">
