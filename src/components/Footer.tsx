@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <img src="/logo-barber.ico" alt="Barber VIP Club" className="h-10 w-10" />
+              <img src="/favicon.ico" alt="Barber VIP Club" className="h-10 w-10" />
               <span className="text-xl font-bold text-barber-gold">BARBA VIP</span>
             </div>
             <p className="text-gray-400 mb-4">Serviços de barbearia premium com benefícios exclusivos para membros do clube VIP.</p>
@@ -57,11 +57,11 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={20} className="text-barber-gold flex-shrink-0" />
-                <span className="text-gray-400">(123) 456-7890</span>
+                <span className="text-gray-400">(92) 98488-6610</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={20} className="text-barber-gold flex-shrink-0" />
-                <span className="text-gray-400">info@barbavip.com</span>
+                <span className="text-gray-400">eulpontes@gmail.com</span>
               </div>
             </div>
           </div>

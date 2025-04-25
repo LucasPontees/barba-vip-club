@@ -8,7 +8,7 @@ const services = [
     title: "Corte Clássico",
     description: "Corte preciso com modelagem especializada e finalização com toalha quente.",
     price: 25,
-    image: "/corte-classico.webp",
+    image: "/model-barber.svg",
     duration: 30,
     slug: "haircut"
   },
@@ -16,7 +16,7 @@ const services = [
     title: "Aparo de Barba",
     description: "Modelagem e estilização da sua barba para um visual limpo e definido.",
     price: 15,
-    image: "/aparo-de-barba.png",
+    image: "/model-barber.svg",
     duration: 15,
     slug: "beard-trim"
   },
@@ -24,7 +24,7 @@ const services = [
     title: "Combo Corte & Barba",
     description: "Pacote completo de cuidados para o cavalheiro moderno.",
     price: 35,
-    image: "/corte-barba.webp",
+    image: "/model-barber.svg",
     duration: 45,
     slug: "haircut-beard"
   },
@@ -32,7 +32,7 @@ const services = [
     title: "Barbear com Toalha Quente",
     description: "Barbear tradicional com navalha e tratamento com toalha quente.",
     price: 30,
-    image: "/toalha.jpg",
+    image: "/model-barber.svg",
     duration: 30,
     slug: "hot-towel"
   },
@@ -40,7 +40,7 @@ const services = [
     title: "Coloração",
     description: "Aplicação profissional de cor para cobrir os grisalhos ou mudar seu visual.",
     price: 50,
-    image: "/coloracao.jpg",
+    image: "/model-barber.svg",
     duration: 60,
     slug: "hair-color"
   },
@@ -48,7 +48,7 @@ const services = [
     title: "Tratamento Facial Masculino",
     description: "Tratamento facial rejuvenescedor projetado especificamente para a pele masculina.",
     price: 40,
-    image: "/facial.jpg",
+    image: "/model-barber.svg",
     duration: 30,
     slug: "facial"
   },
@@ -56,7 +56,7 @@ const services = [
     title: "Raspagem de Cabeça",
     description: "Raspagem limpa da cabeça com navalha e tratamento pós-barba suavizante.",
     price: 35,
-    image: "/raspagem.jpg",
+    image: "/model-barber.svg",
     duration: 30,
     slug: "head-shave"
   },
@@ -64,7 +64,7 @@ const services = [
     title: "Corte Infantil",
     description: "Cortes suaves para jovens cavalheiros menores de 12 anos.",
     price: 20,
-    image: "/corte-infantil.jpg",
+    image: "/model-barber.svg",
     duration: 20,
     slug: "kids-haircut"
   }

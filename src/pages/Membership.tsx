@@ -360,7 +360,7 @@ const Membership: React.FC = () => {
             ) : (
               <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                 <Link to="/login">
-                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                  <Button size="lg" variant="outline" className="border-white text-barber-dark hover:bg-dark/10">
                     Faça Login
                   </Button>
                 </Link>

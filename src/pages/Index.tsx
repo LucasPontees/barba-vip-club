@@ -12,7 +12,7 @@ const featuredServices = [
     title: "Corte Clássico",
     description: "Corte preciso com modelagem especializada e finalização com toalha quente.",
     price: 25,
-    image: "/corte-classico.webp",
+    image: "/model-barber.svg",
     duration: 30,
     slug: "haircut"
   },
@@ -20,7 +20,7 @@ const featuredServices = [
     title: "Aparo de Barba",
     description: "Modelagem e estilização da sua barba para um visual limpo e definido.",
     price: 15,
-    image: "/aparo-de-barba.png",
+    image: "/model-barber.svg",
     duration: 15,
     slug: "beard-trim"
   },
@@ -28,7 +28,7 @@ const featuredServices = [
     title: "Combo Corte & Barba",
     description: "Pacote completo de cuidados para o cavalheiro moderno.",
     price: 35,
-    image: "/corte-barba.webp",
+    image: "/model-barber.svg",
     duration: 45,
     slug: "haircut-beard"
   },
@@ -36,7 +36,7 @@ const featuredServices = [
     title: "Barbear com Toalha Quente",
     description: "Barbear tradicional com navalha e tratamento com toalha quente.",
     price: 30,
-    image: "/toalha.jpg",
+    image: "/model-barber.svg",
     duration: 30,
     slug: "hot-towel"
   }
@@ -47,19 +47,19 @@ const testimonials = [
     name: "João Silva",
     role: "Executivo de Marketing",
     content: "A assinatura VIP vale absolutamente a pena. Economizo dinheiro todos os meses e a reserva prioritária é um divisor de águas para minha agenda ocupada.",
-    avatar: "/testimonial1.jpg"
+    avatar: "/avatar.png"
   },
   {
     name: "Miguel Santos",
     role: "Desenvolvedor de Software",
     content: "Já estive em muitas barbearias, mas a atenção aos detalhes e o serviço personalizado aqui é incomparável. Meu lugar preferido para cuidados pessoais.",
-    avatar: "/testimonial2.jpg"
+    avatar: "/avatar.png"
   },
   {
     name: "David Oliveira",
     role: "Consultor Financeiro",
     content: "Desde que me juntei ao clube VIP, nunca mais tive um corte de cabelo ruim. A consistência e qualidade são impressionantes, e os benefícios extras tornam a decisão óbvia.",
-    avatar: "/testimonial3.jpg"
+    avatar: "/avatar.png"
   }
 ];
 
@@ -91,7 +91,7 @@ const Index: React.FC = () => {
                   </Button>
                 </Link>
                 <Link to="/membership">
-                  <Button size="lg" variant="outline" className="border-barber-gold text-barber-gold hover:bg-barber-gold/10">
+                  <Button size="lg" variant="outline" className="border-barber-black text-barber-gold hover:bg-barber-white/10">
                     Junte-se ao Clube VIP
                   </Button>
                 </Link>

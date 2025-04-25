@@ -46,7 +46,7 @@ const Header: React.FC<HeaderProps> = ({ isAuthenticated: propIsAuthenticated, o
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <Link to="/">
-            <img src="/logo-barber.ico" alt="Barber VIP Club" className="h-10 w-10" />
+            <img src="/favicon.ico" alt="Barber VIP Club" className="h-10 w-10" />
           </Link>
         </div>
 
